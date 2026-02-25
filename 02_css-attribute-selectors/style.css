@@ -1,0 +1,35 @@
+/* 1. [attr] — targets any <a> that has a href attribute, regardless of its value */
+[href] {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* 2. [attr="value"] — targets ONLY the input whose type is exactly "text" */
+[type="text"] {
+    border: 2px solid blue;
+}
+
+/* 3. [attr~="value"] — targets elements whose class list contains the word "highlight"
+          e.g. class="highlight something" or class="bold highlight" both match */
+[class~="highlight"] {
+    background-color: yellow;
+}
+
+/* 4. [attr^="value"] — targets <a> tags whose href starts with "https"
+          useful for styling secure links */
+[href^="https"] {
+    color: green;
+}
+
+/* 5. [attr$="value"] — targets <a> tags whose href ends with ".pdf"
+          useful for styling file download links */
+[href$=".pdf"] {
+    color: red;
+}
+
+/* 6. [attr*="value"] — targets <a> tags whose href contains the word "google"
+          anywhere in the string */
+[href*="google"] {
+    text-decoration: none;
+    letter-spacing: 2px;
+}

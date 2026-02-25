@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Attribute Selectors Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- matches [href] and [href^="https"] and [href*="google"] -->
+        <a href="https://google.com">Google (secure + contains 'google')</a>
+        <br /><br />
+
+        <!-- matches [href] and [href^="https"] -->
+        <a href="https://youtube.com">YouTube (secure link)</a> <br /><br />
+
+        <!-- matches [href] and [href$=".pdf"] -->
+        <a href="http://example.com/report.pdf"
+            >Download PDF (ends with .pdf)</a
+        >
+        <br /><br />
+
+        <!-- matches [href] only — http, not https, not google, not .pdf -->
+        <a href="http://example.com">Unstyled-ish link (just has href)</a>
+        <br /><br />
+
+        <!-- matches [type="text"] -->
+        <input type="text" placeholder="I have a blue border (type=text)" />
+        <br /><br />
+
+        <!-- does NOT match [type="text"] — different exact value -->
+        <input type="password" placeholder="I don't match (type=password)" />
+        <br /><br />
+
+        <!-- matches [class~="highlight"] — "highlight" is one word in the class list -->
+        <p class="highlight bold">
+            I have a yellow background (class contains 'highlight')
+        </p>
+
+        <!-- does NOT match [class~="highlight"] — "highlight" is not a standalone word here -->
+        <p class="highlighted">
+            I don't match (class is 'highlighted', not 'highlight')
+        </p>
+    </body>
+</html>
