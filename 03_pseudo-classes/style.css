@@ -1,0 +1,52 @@
+div p:first-child {
+    color: red;
+}
+
+div a:link,
+div a:visited {
+    color: purple;
+}
+
+div a:hover {
+    color: green;
+}
+
+.color-unset p:first-child {
+    color: unset;
+}
+.special p::first-letter {
+    font-size: 200%;
+    color: orange;
+}
+
+.first-line-blue p:first-child {
+    color: unset;
+}
+
+.first-line-blue p::first-line {
+    font-weight: bold;
+    color: blue;
+}
+
+.selection-test p::selection {
+    background-color: yellow;
+    color: red;
+}
+
+.combined-test p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.before-after-test p:first-child {
+    color: orange;
+    font-size: 2rem;
+}
+
+.before-after-test p::before {
+    content: "Mustang ";
+}
+
+.before-after-test p::after {
+    content: " GT";
+}
