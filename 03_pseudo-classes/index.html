@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Pseudo-classes and Pseudo-elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> <!-- This section is for learning structural pseudo-class -->
+    <div>
+        <p>First paragraph inside this div</p> <!-- This should be colored red-->
+        <p>Paragraph 2</p> <!-- This should remain same-->
+        <p>Paragraph 3</p> <!-- This should also remain same-->
+    </div>
+
+    <div>
+        <p>This text should be colored red</p> <!-- This should be colored red -->
+        <p>This text should remain same;</p> <!-- This should remain same-->
+    </div>
+    </section>
+
+    <section> <!-- This is for learning Dynamic pseudo-classes or interactive pseudo classes.-->
+        <div>
+            <a href="">Hover over me</a>
+        </div>
+    </section>
+
+    <section> <!-- This is for learning pseudo-elements-->
+        <div class="special color-unset">
+            <p>This is a paragraph. The first letter of this paragraph should be colored red.</p> <!-- The first letter of this paragraph should be colored blue -->
+        </div>
+
+        <div class="first-line-blue">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis quos officiis, consectetur laborum doloribus temporibus. Inventore, ea eaque nulla voluptas amet eligendi placeat qui recusandae voluptatibus exercitationem quae quasi?</p>
+        </div>
+
+        <div class="selection-test color-unset"> <!-- This is for learning the after pseudo-element ::selection -->
+            <p>This is a paragraph</p> <!-- When you select this text, the background color of the selected text should change to yellow and the text color should change to red. -->
+        </div>
+    </section>
+
+    <section> <!-- Combining Pseudo Elements & Pseudo Classes-->
+        <div class="color-unset combined-test">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid, quos deleniti dolor maxime blanditiis delectus repellendus debitis dolore mollitia harum asperiores commodi ullam veritatis nulla sequi. Numquam, nulla soluta.
+            Sunt beatae voluptate repellat necessitatibus doloremque nostrum illum at, quas, unde vitae ea alias odio iure quos non! Aut molestias doloremque pariatur voluptas repudiandae neque necessitatibus fuga consequatur, quidem officiis.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi molestiae culpa reprehenderit unde a aut error aperiam laudantium quidem distinctio cum atque, velit facere nam obcaecati impedit. Recusandae, perspiciatis.</p>
+        </div>
+
+        <div class="before-after-test">
+            <p>Shelby</p> <!-- the word mustang would be added before actual content and the word GT would be added after actual content -->
+            
+            <!-- NOTE: I know that we usually don't add text using CSS and ::before and ::after properties are used for different purposes but still I am doing it just for fun, thanks -->
+        </div>
+    </section>
+</body>
+</html>
