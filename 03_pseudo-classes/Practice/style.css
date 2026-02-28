@@ -1,0 +1,68 @@
+* {
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+ul li {
+    border-top: 1px solid black;
+    padding: 0.5em;
+    width: 200px;
+}
+
+ul li:first-child {
+    border-top: none;
+    color: orange;
+}
+
+ul li:last-child {
+    border-bottom: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tfoot td {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+input:required {
+    border-left: 3px solid tomato;
+}
+
+input:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+input[type="checkbox"]:checked + label {
+    color: royalblue;
+    font-weight: bold;
+}
+
+input:invalid {
+    border-color: tomato; /* only shows after user interaction ✅ */
+}
