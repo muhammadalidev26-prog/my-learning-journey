@@ -1,0 +1,17 @@
+
+body {
+    background: skyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.paragraph-one {
+    color: rgb(128,0,128);
+}
+
+.paragraph-two {
+    color: rgb(9, 143, 20)
+}
