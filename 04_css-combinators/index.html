@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learning CSS Combinators</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- "Descendant Selector" targets ALL nested elements inside the parent, regardless of nesting depth -->
+        <div id="container">
+            <p>This is item #1</p>
+            <p>This is item #2</p>
+
+            <div>
+                <p>This is item #3</p>
+            </div>
+        </div>
+
+        <p>This is item #4</p>
+
+        <!-- Child Selector targets only the direct children of the parent element -->
+        <div id="container2">
+            <p>This is item #1</p>
+            <p>This is item #2</p>
+
+            <div>
+                <p>This is item #3</p>
+            </div>
+        </div>
+
+        <!-- Next Sibling Selector targets the next sibling of the parent element -->
+        <h2 id="heading">Next Sibling Selector</h2>
+        <p>This is item #1</p>
+        <p>This is item #2</p>
+        <p>This is item #3</p>
+
+        <!-- Subsquent Sibling Selector -->
+        <!-- It selects siblings even if they don't come right after an element you use subsequent-sibling combinato -->
+        <h2 id="heading2">Subsquent Sibling Selector</h2>
+        <p>This is item #1</p>
+        <div>this is a div</div>
+        <p>This is item #3</p>
+    </body>
+</html>
