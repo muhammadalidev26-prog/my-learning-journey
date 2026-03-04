@@ -1,0 +1,53 @@
+/* --- Global Setup --- */
+.parent {
+    color: blue;
+    border: 5px solid blue;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.box {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black; /* Default border for visibility */
+}
+
+/* --- 1. Inherit --- */
+.box-inherit {
+    /* Forces border to be blue/solid like the parent, 
+       even though borders don't normally inherit. */
+    border: inherit;
+    color: inherit;
+}
+
+/* --- 2. Initial --- */
+.box-initial {
+    /* Color resets to the CSS spec default (usually Black) */
+    color: initial;
+    /* Display resets to 'inline' because that is the spec default 
+       for the display property, even though divs are usually block! */
+    display: initial;
+}
+
+/* --- 3. Unset --- */
+.box-unset {
+    /* Color is an inherited property, so this acts like 'inherit' (Blue) */
+    color: unset;
+    /* Border is NOT inherited, so this acts like 'initial' (None/0) */
+    border: unset;
+}
+
+/* --- 4. Revert --- */
+.box-revert {
+    /* Resets styles to the Browser's stylesheet. 
+       Since browsers don't give <div>s a specific color, 
+       it stays blue because it inherits from the parent. */
+    color: revert;
+}
+
+.box-revert-h2 {
+    /* This is where 'revert' shines. It will make this H2 
+       look like a standard big, bold header again, 
+       ignoring the parent's blue color if the browser default is black. */
+    all: revert;
+}
