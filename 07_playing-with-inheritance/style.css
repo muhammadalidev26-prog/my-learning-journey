@@ -1,0 +1,35 @@
+body {
+    font-size: 2rem;
+    color: orange;
+}
+
+p {
+    color: purple;;
+}
+
+.my-first-p {
+    color: inherit;
+}
+
+.my-second-p {
+    color: revert;
+}
+
+.my-third-p {
+    color: blueviolet;
+}
+
+blockquote {
+    background-color: orange;
+    border: 2px solid blue;
+}
+
+.fix-this {
+    all: unset;
+}
+
+
+/* This would make span inherit every property from body and because body is block element, span would become a block element too */
+span {
+    all: inherit;
+}
