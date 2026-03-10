@@ -29,7 +29,7 @@ body {
 }
 
 .container p {
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
@@ -100,7 +100,7 @@ body {
 }
 
 .container.active .sign-in {
-    transform: translateX(100%)
+    transform: translateX(100%);
 }
 
 .sign-up {
@@ -150,27 +150,25 @@ body {
     width: 50%;
     height: 100%;
     overflow: hidden;
-    transition: all 0.6 ease-in-out;
+    transition: all 0.6s ease-in-out; /* FIX 3: was "0.6" missing the "s" unit */
     border-radius: 150px 0 0 100px;
     z-index: 1000;
 }
 
 .container.active .toggle-container {
     transform: translateX(-100%);
-    border-radius: 0 150px 100px 0 ;
+    border-radius: 0 150px 100px 0;
 }
 
 .toggle {
-    background-color: #512da8;
-    height: 100%;
     background: linear-gradient(to right, #5c6bc0, #512da8);
     color: #fff;
+    position: relative; /* FIX 2: added so toggle-panel absolute positioning works */
     left: -100%;
     height: 100%;
     width: 200%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
-
 }
 
 .container.active .toggle {
@@ -196,7 +194,15 @@ body {
     transform: translateX(-200%);
 }
 
+.container.active .toggle-left { /* FIX 4: was ".container-active" (wrong, never fires) */
+    transform: translateX(0);
+}
+
 .toggle-right {
     right: 0;
-    transform: translateX(0)
+    transform: translateX(0);
+}
+
+.container.active .toggle-right { /* FIX 4: same typo fix here */
+    transform: translateX(200%);
 }
