@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Units & Sizes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>CSS Units & Sizes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            iusto eaque atque ratione dignissimos temporibus, assumenda aliquam
+            exercitationem hic maxime soluta repellat culpa ab in facilis ipsa
+            quod odit quibusdam.
+        </p>
+
+        <!-- px, vw and em -->
+        <div class="wrapper">
+            <div class="box px">I am 200px wide</div>
+            <div class="box vw">I am 10vw wide</div>
+            <div class="box em">I am 10em wide</div>
+        </div>
+
+        <!-- Ems and Rems -->
+        <ul class="ems">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+                Three
+                <ul>
+                    <li>Three A</li>
+                    <li>
+                        Three B
+                        <ul>
+                            <li>Three B 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="rems">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+                Three
+                <ul>
+                    <li>Three A</li>
+                    <li>
+                        Three B
+                        <ul>
+                            <li>Three B 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Percentages -->
+        <div class="box px">I am 200px wide</div>
+        <div class="box percent">I am 40% wide</div>
+        <div class="wrapper">
+            <div class="box px">I am 200px wide</div>
+            <div class="box percent">I am 40% wide</div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="numbers">
+            <div class="num-box">I am a box with opacity</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+/* body {
+    font-size: 32px;
+} */
+
+h1 {
+    color: blue;
+    /* font-size: 2em; */
+    font-size: 2em;
+    /* font-size: 2vh; */
+    /* font-size: 2vw; */
+    /* font-size: 2vmin; */
+    /* font-size: 2vmax; */
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* px, vw and em */
+.wrapper {
+    font-size: 1em;
+}
+
+.box {
+    background-color: lightblue;
+    border: 5px solid darkblue;
+    padding: 10px;
+    margin: 1em 0;
+}
+
+.px {
+    width: 200px;
+}
+
+.vw {
+    width: 10vw;
+}
+
+.em {
+    width: 10em;
+}
+
+/* Ems and Rems */
+html {
+    font-size: 16px;
+}
+
+.ems li {
+    font-size: 1.3em;
+}
+
+.rems li {
+    font-size: 1.3rem;
+}
+
+/* Percentage */
+.box {
+    background-color: lightblue;
+    border: 5px solid darkblue;
+    padding: 10px;
+    margin: 1em 0;
+}
+.wrapper {
+    width: 400px;
+    border: 5px solid rebeccapurple;
+}
+
+.px {
+    width: 200px;
+}
+
+.percent {
+    width: 40%;
+}
+
+.numbers {
+    background-image: url("https://mdn.github.io/shared-assets/images/examples/balloons.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 20px;
+    width: 600px;
+}
+
+.num-box {
+    margin: 40px auto;
+    width: 200px;
+    background-color: lightblue;
+    border: 5px solid darkblue;
+    padding: 30px;
+    opacity: 0.6;
+}
