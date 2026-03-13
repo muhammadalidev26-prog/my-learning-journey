@@ -1,0 +1,28 @@
+
+body {
+	font-size: 1.4rem;
+	background-color: lightgreen;
+}
+
+.subHeadings {
+	color: rgb(102, 51, 153 / 0.5);
+}
+.hslColoring {
+	color: rgb(102, 51, 153 / 0.8);
+}
+
+#mainText {
+	color: #7e6696
+}
+
+.warning {
+	color: rgb(102, 51, 153)
+}
+
+h1 {
+	color: hsl(240, 100%, 20%)
+}
+
+h2 {
+	color: hsla(300, 100%, 40%, 0.5)
+}
