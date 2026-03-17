@@ -1,0 +1,42 @@
+
+input:required {
+    border-left: 3px solid red;
+}
+
+.form-group:has(input:focus) {
+    background-color: lightblue;
+}
+
+input[type="email"]:focus:invalid {
+    border: 2px solid red;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+ul li:nth-child(even) {
+    background-color: lightgray;
+}
+
+input[type="checkbox"]:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input:not([id="nickname"]):hover {
+    background: yellow;
+}
+
+button:active {
+    transform: scale(0.97)
+}
