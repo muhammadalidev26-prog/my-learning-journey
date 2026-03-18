@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- When you don't provide height/width manually the elements take their natural size, look at this image for example -->
+    <img src="../download.png" alt="Cat Image">
+
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box">
+            These boxes both have a height set, this box has content in it which will
+            need more space than the assigned height, and so we get overflow.
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="box2">I have margin and padding set to 10%</div>
+    </div>
+
+    <div class="container2">
+        <div class="box3"></div>
+        <div class="box3">this is a box which is gonna grow from it's minimum height and width set and the box beside it is gonna stay smaller because it doesn't need any more space</div> 
+    </div>
+
+    
+</body>
+
+</html>

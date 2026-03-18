@@ -1,0 +1,53 @@
+img {
+    border: 2px solid purple;
+    border-radius: 14px;
+}
+
+body {
+    font: 1.2em sans-serif;
+}
+.wrapper {
+    display: flex;
+}
+
+.wrapper > * {
+    margin: 20px;
+}
+
+.box {
+    border: 5px solid darkblue;
+    height: 100px;
+    width: 200px;
+}
+
+body {
+    font: 1.2em sans-serif;
+}
+
+
+.parent{
+    width: 1000px;
+}
+
+.box2 {
+    border: 5px solid darkblue;
+    width: 200px;
+    margin: 10%;
+    padding: 10%;
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container2 > * {
+    margin: 20px;
+}
+
+.box3 {
+    border: 2px solid black;
+    min-height: 100px;
+    max-height: 150px;
+    width: 200px;
+}
