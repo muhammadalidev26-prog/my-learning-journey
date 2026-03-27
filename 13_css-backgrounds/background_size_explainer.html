@@ -1,0 +1,125 @@
+
+<style>
+  .demo-box {
+    width: 100%;
+    height: 180px;
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: var(--border-radius-lg);
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 99px;
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+  .note {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin: 6px 0 0;
+    padding: 0 2px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 4px 0; }
+  .section-label { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 6px; }
+  .prop-tag { font-family: var(--font-mono); font-size: 12px; color: var(--color-text-secondary); margin-bottom: 8px; }
+
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    border: 0.5px solid var(--color-border-secondary);
+    cursor: pointer;
+    background: var(--color-background-secondary);
+    color: var(--color-text-secondary);
+    transition: all 0.15s;
+  }
+  .chip.active {
+    background: var(--color-text-primary);
+    color: var(--color-background-primary);
+    border-color: transparent;
+  }
+
+  .ratio-note {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    text-align: center;
+    margin-top: 4px;
+  }
+</style>
+
+<p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 12px;">Switch images to see how the behavior changes with different aspect ratios:</p>
+
+<div class="controls" id="img-controls">
+  <button class="chip active" onclick="setImage('landscape')">Landscape photo</button>
+  <button class="chip" onclick="setImage('portrait')">Portrait photo</button>
+  <button class="chip" onclick="setImage('wide')">Very wide image</button>
+</div>
+
+<div class="grid">
+  <div>
+    <p class="section-label">cover</p>
+    <p class="prop-tag">background-size: cover</p>
+    <div class="demo-box" id="box-cover" style="background-size: cover;">
+      <span class="badge">cover</span>
+    </div>
+    <p class="note" id="note-cover">✓ Fills the container — edges may be cropped</p>
+  </div>
+  <div>
+    <p class="section-label">contain</p>
+    <p class="prop-tag">background-size: contain</p>
+    <div class="demo-box" id="box-contain" style="background-size: contain; background-color: var(--color-background-secondary);">
+      <span class="badge">contain</span>
+    </div>
+    <p class="note" id="note-contain">✓ Full image visible — gaps filled by bg-color</p>
+  </div>
+</div>
+
+<script>
+const images = {
+  landscape: {
+    url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80',
+    label: 'Landscape (wider than container)',
+    coverNote: '✓ Fills box perfectly — top/bottom cropped slightly',
+    containNote: '✓ Whole image fits — horizontal bars visible'
+  },
+  portrait: {
+    url: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&q=80',
+    label: 'Portrait (taller than container)',
+    coverNote: '✓ Fills box — left/right edges cropped',
+    containNote: '✓ Full image fits — vertical side bars visible'
+  },
+  wide: {
+    url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    label: 'Very wide panorama',
+    coverNote: '✓ Height matches — a lot of width is cropped off',
+    containNote: '✓ Entire image fits — large top/bottom bars'
+  }
+};
+
+function setImage(key) {
+  const img = images[key];
+  const url = `url('${img.url}')`;
+  document.getElementById('box-cover').style.backgroundImage = url;
+  document.getElementById('box-contain').style.backgroundImage = url;
+  document.getElementById('note-cover').textContent = img.coverNote;
+  document.getElementById('note-contain').textContent = img.containNote;
+
+  document.querySelectorAll('#img-controls .chip').forEach(c => c.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>

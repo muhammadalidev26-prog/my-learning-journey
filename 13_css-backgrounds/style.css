@@ -1,0 +1,69 @@
+.background-colors .container {
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+}
+
+.background-colors div h1 {
+    background-color: brown;
+    color: white;
+    border: 2px solid brown;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.background-colors div p {
+    background-color: pink;
+    color: brown;
+    border: 2px solid brown;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.background-images .container {
+    height: 300px;
+    width: 300px;
+    border: 2px solid brown;
+    background-image: url(../download.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.background-images .gradient-background {
+    height: 300px;
+    width: 300px;
+    /* Default: top to bottom */
+    background-image: linear-gradient(red, yellow);
+
+    /* Angled or directional */
+    background-image: linear-gradient(
+        to right,
+        red,
+        yellow
+    ); /* Left to right */
+    background-image: linear-gradient(
+        45deg,
+        red,
+        yellow
+    ); /* At a specific angle */
+}
+
+.background-images .multiple-backgrounds {
+    height: 300px;
+    width: 300px;
+    margin-top: 2em;
+    border: 2px solid red;
+    background-image:
+        linear-gradient(to top, yellow, violet);
+}
+
+.background-attachments {
+    background: url(../download.png);
+    background-attachment: fixed;
+}
+
+
+/* name */
+
+
