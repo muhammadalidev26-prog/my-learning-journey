@@ -42,7 +42,7 @@ a:focus {
 
 .pane {
     height: 100%;
-    width: clamp(480px 60% 1000px);
+    width: clamp(480px, 60%, 1000px);
     margin: 0 auto;
     background-image: linear-gradient(to bottom, #9fb4c7, #7f7caf);
 }
