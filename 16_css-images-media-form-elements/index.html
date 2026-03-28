@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== 1. IMAGE SIZING WITH max-width ===== -->
+    <div class="small-box">
+        <!-- image will shrink to fit, won't overflow -->
+        <img src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" alt="balloons">
+    </div>
+
+    <!-- ===== 2. OBJECT-FIT: COVER ===== -->
+    <div class="fixed-box">
+        <!-- fills the box completely, crops if needed -->
+        <img class="cover" src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" alt="balloons">
+    </div>
+
+    <!-- ===== 3. OBJECT-FIT: CONTAIN ===== -->
+    <div class="fixed-box">
+        <!-- fits fully inside the box, may leave empty space -->
+        <img class="contain" src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" alt="balloons">
+    </div>
+
+    <!-- ===== 4. REPLACED ELEMENT IN GRID ===== -->
+    <div class="grid-container">
+        <!-- divs will stretch to fill grid cells, image won't -->
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <img src="https://mdn.github.io/shared-assets/images/examples/big-star.png" alt="star">
+        <div class="grid-item"></div>
+    </div>
+
+    <!-- ===== 5. FORM ELEMENTS ===== -->
+    <form>
+        <!-- text input styled like a normal box -->
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Your email">
+
+        <!-- textarea with overflow:auto to avoid unnecessary scrollbar -->
+        <textarea placeholder="Your message"></textarea>
+
+        <!-- styled submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

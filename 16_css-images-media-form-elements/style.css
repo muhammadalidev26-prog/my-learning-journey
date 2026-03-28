@@ -1,0 +1,108 @@
+/* ===== 1. IMAGE SIZING WITH max-width ===== */
+.small-box {
+    width: 200px;
+    border: 3px solid red;
+}
+
+.small-box img {
+    /* image shrinks to fit the box, never overflows */
+    max-width: 100%;
+}
+
+/* ===== 2 & 3. OBJECT-FIT ===== */
+.fixed-box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid blue;
+    margin: 10px 0;
+}
+
+.fixed-box img {
+    /* image must have width and height for object-fit to work */
+    width: 100%;
+    height: 100%;
+}
+
+.cover {
+    /* fills the box, crops parts of image to avoid distortion */
+    object-fit: cover;
+}
+
+.contain {
+    /* fits whole image inside box, empty space may appear */
+    object-fit: contain;
+}
+
+/* ===== 4. REPLACED ELEMENT IN GRID ===== */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    width: 300px;
+    border: 3px solid green;
+}
+
+.grid-item {
+    /* divs stretch to fill the full grid cell */
+    background-color: lightcoral;
+}
+
+/* .grid-container img {
+    /* image does NOT stretch — it aligns to start of cell */
+    /* no extra css needed, this is the default replaced element behavior */ */
+
+/* ===== 5. FORM RESET — applied first ===== */
+button,
+input,
+select,
+textarea {
+    /* use the page font instead of browser default */
+    font-family: inherit;
+    font-size: 100%;
+
+    /* padding won't break defined widths */
+    box-sizing: border-box;
+
+    /* clean slate for spacing */
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    /* prevents unnecessary scrollbar in older browsers */
+    overflow: auto;
+}
+
+/* ===== 5. FORM ELEMENT STYLING ===== */
+input[type="text"],
+input[type="email"] {
+    /* these behave like normal boxes — easy to style */
+    border: 2px solid black;
+    padding: 8px;
+    width: 250px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+textarea {
+    border: 2px solid black;
+    padding: 8px;
+    width: 250px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="submit"] {
+    background-color: #555;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    /* hover state to show button is interactive */
+    background-color: #222;
+}
