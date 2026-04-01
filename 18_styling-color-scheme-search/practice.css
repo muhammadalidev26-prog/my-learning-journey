@@ -1,0 +1,92 @@
+p {
+    line-height: 1.6;
+}
+
+main > p {
+    font-size: 1.2rem;
+}
+
+h1 + p {
+    font-weight: bold;
+}
+
+article h2 ~ p {
+    color: steelblue;
+}
+
+article > p {
+    border-left: 3px solid gray;
+}
+
+article div p {
+    font-style: italic;
+}
+
+article > ul > li {
+    list-style: none;
+}
+
+img {
+    filter: drop-shadow(0px 2px 5px purple);
+}
+
+article img + p {
+    color: tomato;
+}
+
+article img ~ p {
+    text-decoration: underline;
+}
+
+ul > .special {
+    background-color: gold;
+}
+
+input:not([placeholder="Nickname"]) {
+    border: 3px solid green;
+}
+
+input + button {
+    background: lightcoral;
+}
+
+footer p {
+    color: gray;
+}
+
+footer p:first-child {
+    font-size: 1.1rem;
+}
+
+footer > ul {
+    border-top: 2px solid lightgray;
+}
+
+main article:first-child h2 + p {
+    text-decoration: underline;
+}
+
+footer ul li:not(:last-child) {
+    border: 1px solid lightgray;
+}
+
+/* body {
+    background: black;
+} */
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.box1 {
+    border: 4px outset purple;
+}
+
+.box2 {
+    border: 5px red;
+    border-style: dashed;
+}
+
