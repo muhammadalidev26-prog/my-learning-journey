@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h3>filter blur</h3>
+        <div class="box">
+            <img alt="balloons" class="blur" src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter grayscale</h3>
+        <div class="box">
+            <img alt="balloons" class="grayscale"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter brightness</h3>
+        <div class="box">
+            <img alt="balloons" class="brightness"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+
+    </div>
+
+    <div class="wrapper">
+        <h3>filter contrast</h3>
+        <div class="box">
+            <img alt="balloons" class="contrast"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter saturate</h3>
+        <div class="box">
+            <img alt="balloons" class="saturate"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter hue-rotate</h3>
+        <div class="box">
+            <img alt="balloons" class="hue-rotate"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+
+
+    </div>
+
+    <div class="wrapper">
+
+        <h3>filter invert</h3>
+        <div class="box">
+            <img alt="balloons" class="invert" src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter opacity</h3>
+        <div class="box">
+            <img alt="balloons" class="opacity"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter sepia</h3>
+        <div class="box">
+            <img alt="balloons" class="sepia" src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+    </div>
+
+
+    <div class="wrapper">
+        <h3>filter drop-shadow</h3>
+        <div class="box">
+            <img alt="balloons" class="drop-shadow"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter SVG (custom filters)</h3>
+        <div class="box">
+            <img alt="balloons" class="svg-filter"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+        <h3>filter Chaining multiple filters</h3>
+        <div class="box">
+            <img alt="balloons" class="chaining-multiple-filters"
+                src="https://mdn.github.io/shared-assets/images/examples/balloons.jpg" />
+        </div>
+
+    </div>
+
+
+    <svg style="display:none">
+        <filter id="myCustomFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" />
+            <feColorMatrix type="saturate" values="0" />
+        </filter>
+    </svg>
+</body>
+
+</html>
