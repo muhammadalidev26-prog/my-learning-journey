@@ -1,0 +1,22 @@
+
+
+.box {
+    background-color: #0ff;
+    border: 1px solid #000;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    filter: brightness(120%) hue-rotate(90deg);
+}
+
+img {
+    mix-blend-mode: multiply;
+    border: 10px solid rgb(125, 0, 255);
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    background-color: #9686BF;
+    filter: brightness(120%);
+}

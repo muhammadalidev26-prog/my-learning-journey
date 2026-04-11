@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            display: flex;
+            gap: 20px;
+        }
+
+        .container {
+            height: 600px;
+            width: fit-content;
+            /* padding: 1em; */
+            border: 2px solid black;
+            background-color: #fcac4a;
+            /* background-image: url(../../farm_sunset.jpg); */
+            /* background-blend-mode: screen; */
+        }
+
+        .container img {
+            height: 100%;
+            mix-blend-mode: multiply;
+            filter: brightness(120%) contrast(1.2)
+        }
+
+        .container2 {
+            height: 600px;
+            width: fit-content;
+            border: 2px solid black;
+            background-color: #87ceeb;
+
+        }
+
+        .container2 img {
+            height: 100%;
+            mix-blend-mode: multiply;
+            filter: brightness(120%) contrast(1.2)
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <img src="../../farm_sunset.jpg" alt="Farm Sunset">
+        </div>
+
+        <div class="container2">
+            <img src="../../farm_sunset.jpg" alt="Farm Sunset">
+        </div>
+    </div>
+</body>
+
+</html>
