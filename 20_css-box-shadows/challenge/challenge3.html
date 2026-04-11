@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Badge Ring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #e8f0f0;
+        }
+
+        .avatar-wrap {
+            position: relative;
+            display: inline-block;
+        }
+
+        .avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #5b8dee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        .avatar-wrap:hover .avatar {
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.20);
+            transform: translateY(-3px);
+        }
+
+        .badge {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #e24b4a;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* THE TRICK */
+            box-shadow: 0 0 0 3px #e8f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="avatar-wrap">
+        <div class="avatar">JD</div>
+        <div class="badge">3</div>
+    </div>
+</body>
+
+</html>
