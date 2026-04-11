@@ -1,0 +1,64 @@
+.simple2 {
+    width: 300px;
+    height: 200px;
+    color: blue;
+    background-color: #f2f1f1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+article {
+    max-width: 500px;
+    padding: 10px;
+    background-color: red;
+    background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 25%));
+    border-radius: 10px;
+}
+
+.simple {
+    box-shadow: 0px 10px 15px rgb(80 0 80 / 40%);
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    box-shadow: 4px 4px 15px #000;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Darkens the top and left inner edges slightly */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Normal floating button */
+.btn {
+    background-color: #3498db;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* Pressed-in effect when clicked */
+.btn:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px); /* Moves it slightly down to sell the effect */
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 3px rgba(196, 36, 105, 0.5);
+    /* offset-x: 0, offset-y: 0, blur: 0, spread: 3px */
+}
+
+.fancy-btn {
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        /* inner top highlight */ 0 4px 6px rgba(0, 0, 0, 0.2),
+        /* drop shadow */ 0 0 0 3px rgba(99, 102, 241, 0.4); /* focus ring/glow */
+}
+
