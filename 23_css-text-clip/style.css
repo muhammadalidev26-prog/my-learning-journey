@@ -1,0 +1,16 @@
+h2.clipped-text {
+    /* 1. Define the gradient as the background */
+    background-image: linear-gradient(135deg, red, orange, yellow);
+    background-size: auto;
+    /* 2. Clip the background to the text */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* 3. Make the text transparent so the background shows through */
+    -webkit-text-fill-color: transparent;
+
+    /* Optional: Ensure the text is visible even if properties fail */
+    /* color: red; */
+
+    font-size: 3rem;
+}
