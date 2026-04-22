@@ -1,0 +1,33 @@
+
+
+body {
+    background-color: #010101;
+    font-family: sans-serif;
+    /* height: 200px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.topTobottom {
+    color: white;
+    font-size: 3rem;
+    writing-mode: sideways-lr;;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 0.29em;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
+}
+
+
+.text {
+    color: white;
+    direction: rtl
+}
+
+
+.name {
+    direction: rtl;
+    font-size: 2rem;
+    color: violet;
+}
