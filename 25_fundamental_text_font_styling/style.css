@@ -1,0 +1,68 @@
+
+.experiment {
+    /* color: brown; */
+    width: fit-content;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #60c7c2, #c05cb8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.second {
+    background-image: linear-gradient(to right, #dc1fa0, #1f9adc);
+    text-shadow: 5px 5px 5px rgb(136, 132, 199);
+}
+
+hr {
+    color: rgba(0 0 0 /0.6);
+    box-shadow: 5px 5px 15px rgba(0 0 0 /0.3);
+}
+
+
+.another-p {
+    font-size: 2rem;
+    /* text-transform: full-width; */
+    font-family: monospace;
+}
+
+.main-paragraph {
+    text-align: justify;
+    line-height: 1.6;
+    word-spacing: 4px;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    font-size: 3rem;
+    font-family: fantasy;
+    text-shadow:
+        1px 1px 1px red,
+        2px 2px 1px green,
+        3px 3px 1px blue;
+}
+
+
+.extra-font-properties > * {
+    color: brown;
+    font-size: 3rem;;
+    font-family: sans-serif;
+}
+
+.p1{
+    font-variant:small-caps;
+    font-family: "IT Cathdra Demo"
+}
+
+.p2 {
+    font-kerning:none;
+}
+
+.title {
+    font-size: clamp(2rem, (5vw + 1rem), 3rem);
+}
+
+.font-shorthand {
+    font: normal normal bold normal 20px/1.2 sans-serif;
+}
