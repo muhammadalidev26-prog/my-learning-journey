@@ -1,0 +1,55 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.attribute-selectors {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: clamp(500px, 95vw, 900px);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.attribute-selectors:hover {
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.4);
+}
+
+[href] {
+    display: block;
+    /* width:fit-content; */
+    margin: 1em;
+    padding: 0.2em;
+    font-size: 2.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: purple;
+    text-decoration-thickness: 2px;
+    /* background-color: rgb(246, 208, 214); */
+    background-image: linear-gradient(to right, rgb(247, 188, 197), rgb(226, 184, 247))
+}
+
+[href="https://google.com"] {
+    color: red;
+}
+
+[class$="british"] {
+    font-style: italic;
+}
+
+[class^="en"]{
+    color: white;
+}
+
+[href*="index"] {
+    color: midnightblue;
+}
+
+[href$=".html"] {
+    background-image:linear-gradient(to right, rgb(226, 184, 247), rgb(246, 208, 214));
+}

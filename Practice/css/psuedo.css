@@ -1,0 +1,66 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+.form {
+    /* min-height: 600px; */
+    width: 500px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.form .form-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+input {
+    background-color: rgb(249, 249, 249);
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: rgb(0, 0, 0, 0.8);
+    padding: 0.5em;
+    margin: 1em;
+    width: 300px;
+}
+
+input:required {
+    border: 2px solid blue;
+}
+
+
+
+input:invalid {
+    border: 2px solid red;
+}
+
+button {
+    font-size: 1.4rem;
+    padding: 0.25em 1em;
+    margin: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(6, 6, 175);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+}
+
+button:active {
+    background-color: rgb(3, 3, 127);
+}
+
+button:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
